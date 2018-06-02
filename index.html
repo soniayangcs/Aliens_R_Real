@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Alien Sightings</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">    
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Aliens Sightings</h1>
+        </div>
+    </div>
+    
+    <!-- form for user to search
+    includes fields like date, city, state, country, shape-->
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Enter in a date/time</label>
+                <input type="text" class="form-control" id="datetime" placeholder="M/D/YYYY">
+                
+                <label>Enter in a city</label>
+                <input type="text" class="form-control" id="city" placeholder="e.g. Los Angeles">
+                
+                <label>Enter in state</label>
+                <input type="text" class="form-control" id="state" placeholder="e.g. CA">
+                
+                <label>Enter in a country</label>
+                <input type="text" class="form-control" id="country" placeholder="e.g. US">
+                
+                <label>Enter in a shape</label>
+                <input type="text" class="form-control" id="shape" placeholder="e.g. circle, light, triangle, unknown, other">
+          </div>
+          
+          <!-- button to submit search results-->    
+          <button type="submit" id="search" class="btn btn-default">Search</button>
+            <br/><br/>
+          <button type="submit" id="goback" class="btn btn-default">Previous</button>
+          <button type="submit" id="loadmore" class="btn btn-default">Next</button>
+   
+        </div>
+    </div>
+    
+    <!-- setting up the table display for results -->
+    <div class="row">
+        <div class="col-md-12">
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>date/time</th>
+                <th>city</th>
+                <th>state</th>
+                <th>country</th>
+                <th>shape</th>
+                <th>duration</th>
+                <th>comments</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    
+      <!-- dynamically load table into this div -->
+      <div class="alientable">
+      
+      </div>
+ 
+  
+
+</div> <!--closing the overall container div -->
+    
+    <script src="data.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
