@@ -8,7 +8,7 @@ There is just one tiny problem though... Our collection is too large to search t
 
 The planet Earth needs to know what we have found!
 
-### Automatic Table and User Searc
+### Automatic Table and User Search
 
 * basic HTML web page
 
